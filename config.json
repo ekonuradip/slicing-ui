@@ -1,0 +1,28 @@
+{
+    "modules": [
+        "login",
+        "coffee/coffeedashboard",
+        "coffee/coffeedetail",
+        "coffee/cofeeintro",
+        "travel/travel_intro",
+        "travel/travel_dashboard",
+        "travel/travel_detail",
+        "classroom/classroom_dashboard",
+        "classroom/classroom_detail",
+        "doctor/doctor_dashboard",
+        "doctor/doctor_detail",
+        "vacation/vacation_main_navigation",
+        "vacation/vacation_dashboard",
+        "vacation/vacation_detail",
+        "vacation/vacation_intro"
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "learning_mode": false,
+    "unfreezed": true,
+    "use_cubit": false,
+    "ignore_core_generator_for_directories": [
+        "lib/model",
+        "lib/models"
+    ]
+}
