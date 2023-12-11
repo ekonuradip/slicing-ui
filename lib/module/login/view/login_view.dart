@@ -318,7 +318,11 @@ class _LoginViewState extends State<LoginView> {
                 const SizedBox(
                   width: 12.0,
                 ),
-                buttonPortofolio(name: "Test", page: TravelDashboardView())
+                buttonPortofolio(name: "Test", page: TravelDashboardView()), 
+                const SizedBox(
+                width: 12.0,
+                ),
+                buttonPortofolio(name: "Cleaning", page: CleaningDashboardView())
               ],
             )
           ],

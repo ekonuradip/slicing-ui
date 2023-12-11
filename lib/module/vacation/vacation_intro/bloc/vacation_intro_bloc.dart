@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../event/vacation_intro_event.dart';
 import '../state/vacation_intro_state.dart';
 import 'package:hyper_ui/bloc_util.dart';
-import 'package:injectable/injectable.dart';
 
-@singleton
+
+
 class VacationIntroBloc extends Bloc<VacationIntroEvent, VacationIntroState> implements IBlocBase {
   VacationIntroBloc() : super(VacationIntroState()) {
     on<VacationIntroIncrementEvent>((event, emit) {

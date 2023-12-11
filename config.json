@@ -14,7 +14,8 @@
         "vacation/vacation_main_navigation",
         "vacation/vacation_dashboard",
         "vacation/vacation_detail",
-        "vacation/vacation_intro"
+        "vacation/vacation_intro",
+        "cleaning/cleaning_dashboard"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
