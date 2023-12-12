@@ -18,6 +18,8 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CleaningDashboardState {
   int get counter => throw _privateConstructorUsedError;
   set counter(int value) => throw _privateConstructorUsedError;
+  List<dynamic> get categories => throw _privateConstructorUsedError;
+  set categories(List<dynamic> value) => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CleaningDashboardStateCopyWith<CleaningDashboardState> get copyWith =>
@@ -30,7 +32,7 @@ abstract class $CleaningDashboardStateCopyWith<$Res> {
           $Res Function(CleaningDashboardState) then) =
       _$CleaningDashboardStateCopyWithImpl<$Res, CleaningDashboardState>;
   @useResult
-  $Res call({int counter});
+  $Res call({int counter, List<dynamic> categories});
 }
 
 /// @nodoc
@@ -48,12 +50,17 @@ class _$CleaningDashboardStateCopyWithImpl<$Res,
   @override
   $Res call({
     Object? counter = null,
+    Object? categories = null,
   }) {
     return _then(_value.copyWith(
       counter: null == counter
           ? _value.counter
           : counter // ignore: cast_nullable_to_non_nullable
               as int,
+      categories: null == categories
+          ? _value.categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>,
     ) as $Val);
   }
 }
@@ -67,7 +74,7 @@ abstract class _$$CleaningDashboardStateImplCopyWith<$Res>
       __$$CleaningDashboardStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int counter});
+  $Res call({int counter, List<dynamic> categories});
 }
 
 /// @nodoc
@@ -84,12 +91,17 @@ class __$$CleaningDashboardStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? counter = null,
+    Object? categories = null,
   }) {
     return _then(_$CleaningDashboardStateImpl(
       counter: null == counter
           ? _value.counter
           : counter // ignore: cast_nullable_to_non_nullable
               as int,
+      categories: null == categories
+          ? _value.categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>,
     ));
   }
 }
@@ -97,15 +109,25 @@ class __$$CleaningDashboardStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$CleaningDashboardStateImpl implements _CleaningDashboardState {
-  _$CleaningDashboardStateImpl({this.counter = 0});
+  _$CleaningDashboardStateImpl(
+      {this.counter = 0,
+      this.categories = const [
+        {"icon": Icons.home, "label": "Cleaning"},
+        {"icon": Icons.home_repair_service, "label": "Repairing"},
+        {"icon": Icons.plumbing, "label": "Plumbing"},
+        {"icon": Icons.car_repair, "label": "Shifting"}
+      ]});
 
   @override
   @JsonKey()
   int counter;
+  @override
+  @JsonKey()
+  List<dynamic> categories;
 
   @override
   String toString() {
-    return 'CleaningDashboardState(counter: $counter)';
+    return 'CleaningDashboardState(counter: $counter, categories: $categories)';
   }
 
   @JsonKey(ignore: true)
@@ -117,11 +139,15 @@ class _$CleaningDashboardStateImpl implements _CleaningDashboardState {
 }
 
 abstract class _CleaningDashboardState implements CleaningDashboardState {
-  factory _CleaningDashboardState({int counter}) = _$CleaningDashboardStateImpl;
+  factory _CleaningDashboardState({int counter, List<dynamic> categories}) =
+      _$CleaningDashboardStateImpl;
 
   @override
   int get counter;
   set counter(int value);
+  @override
+  List<dynamic> get categories;
+  set categories(List<dynamic> value);
   @override
   @JsonKey(ignore: true)
   _$$CleaningDashboardStateImplCopyWith<_$CleaningDashboardStateImpl>
