@@ -11,7 +11,7 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import 'module/cleaning/cleaning_dashboard/bloc/cleaning_dashboard_bloc.dart'
+import 'module/cleaning/cleaning_main_navigation/bloc/cleaning_main_navigation_bloc.dart'
     as _i3;
 
 extension GetItInjectableX on _i1.GetIt {
@@ -25,7 +25,8 @@ extension GetItInjectableX on _i1.GetIt {
       environment,
       environmentFilter,
     );
-    gh.singleton<_i3.CleaningDashboardBloc>(_i3.CleaningDashboardBloc());
+    gh.singleton<_i3.CleaningMainNavigationBloc>(
+        _i3.CleaningMainNavigationBloc());
     return this;
   }
 }
