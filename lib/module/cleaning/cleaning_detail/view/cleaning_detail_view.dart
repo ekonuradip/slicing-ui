@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hyper_ui/core.dart';
 import '../bloc/cleaning_detail_bloc.dart';
 import '../event/cleaning_detail_event.dart';
 import '../state/cleaning_detail_state.dart';
@@ -262,7 +263,214 @@ class _CleaningDetailViewState extends State<CleaningDetailView> {
                       color: Colors.grey[600],
                     ),
                   ),
+                  const SizedBox(
+                    height: 16.0,
+                  ),
+                  Row(
+                    children: List.generate(state.categories.length, (index) {
+                      var item = state.categories[index];
+                      bool selected = state.selectedIndex == index;
+                      return Expanded(
+                        child: InkWell(
+                          onTap: () => bloc.add(CleaningDetailUpdateIndexEvent(
+                              selectedIndex: index)),
+                          child: Container(
+                            padding: const EdgeInsets.all(10.0),
+                            decoration: BoxDecoration(
+                                border: Border(
+                                    bottom: BorderSide(
+                                        color: selected
+                                            ? Color(0xff4c9782)
+                                            : Colors.grey[300]!,
+                                        width: 2))),
+                            child: Center(
+                              child: Text(
+                                item,
+                                style: TextStyle(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.bold,
+                                    color: selected
+                                        ? Color(0xff4c9782)
+                                        : Colors.black54),
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }),
+                  ),
+                  const SizedBox(
+                    height: 16.0,
+                  ),
+                  Text(
+                    "About Service",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 12.0,
+                  ),
+                  Text(
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.grey[600],
+                    ),
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  const SizedBox(
+                    height: 16.0,
+                  ),
+                  Text(
+                    "Service Provider",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 6.0,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      CircleAvatar(
+                        radius: 30,
+                        backgroundImage: NetworkImage(
+                          "https://i.ibb.co/PGv8ZzG/me.jpg",
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 16.0,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Jenny Wilson",
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 4.0,
+                            ),
+                            Text(
+                              "Service Provider",
+                              style: TextStyle(
+                                fontSize: 18.0,
+                                color: Colors.grey[600],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Get.to(CleaningDashboardView());
+                        },
+                        child: Center(
+                          child: CircleAvatar(
+                            radius: 24,
+                            backgroundColor: Colors.grey.withOpacity(0.2),
+                            child: Icon(
+                              Icons.chat,
+                              color: Color(0xff4c9782),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 12.0,
+                      ),
+                      Center(
+                        child: CircleAvatar(
+                          radius: 24,
+                          backgroundColor: Colors.grey.withOpacity(0.2),
+                          child: Icon(
+                            Icons.call,
+                            color: Color(0xff4c9782),
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
                 ],
+              ),
+            ),
+          ],
+        ),
+      ),
+      bottomNavigationBar: Container(
+        padding: const EdgeInsets.all(16.0),
+        height: 90,
+        decoration: BoxDecoration(
+          color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.withOpacity(0.5),
+              spreadRadius: 2,
+              blurRadius: 5,
+              offset: Offset(0, 2), // changes position of shadow
+            ),
+          ],
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Total Price",
+                    style: TextStyle(
+                      fontSize: 18.0,
+                      color: Colors.grey[600],
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 6.0,
+                  ),
+                  Text(
+                    "\$180.00",
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xff4c9782)),
+                  ),
+                ],
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                Get.offAll(LoginView());
+              },
+              child: Container(
+                height: 80,
+                width: MediaQuery.of(context).size.width * 0.55,
+                decoration: const BoxDecoration(
+                  color: Color(0xff4c9782),
+                  borderRadius: BorderRadius.all(
+                    Radius.circular(48.0),
+                  ),
+                ),
+                child: Center(
+                  child: Text(
+                    "Book Now",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
               ),
             ),
           ],

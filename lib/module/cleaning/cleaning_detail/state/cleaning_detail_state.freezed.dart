@@ -18,6 +18,10 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CleaningDetailState {
   int get counter => throw _privateConstructorUsedError;
   set counter(int value) => throw _privateConstructorUsedError;
+  int get selectedIndex => throw _privateConstructorUsedError;
+  set selectedIndex(int value) => throw _privateConstructorUsedError;
+  List<dynamic> get categories => throw _privateConstructorUsedError;
+  set categories(List<dynamic> value) => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CleaningDetailStateCopyWith<CleaningDetailState> get copyWith =>
@@ -30,7 +34,7 @@ abstract class $CleaningDetailStateCopyWith<$Res> {
           CleaningDetailState value, $Res Function(CleaningDetailState) then) =
       _$CleaningDetailStateCopyWithImpl<$Res, CleaningDetailState>;
   @useResult
-  $Res call({int counter});
+  $Res call({int counter, int selectedIndex, List<dynamic> categories});
 }
 
 /// @nodoc
@@ -47,12 +51,22 @@ class _$CleaningDetailStateCopyWithImpl<$Res, $Val extends CleaningDetailState>
   @override
   $Res call({
     Object? counter = null,
+    Object? selectedIndex = null,
+    Object? categories = null,
   }) {
     return _then(_value.copyWith(
       counter: null == counter
           ? _value.counter
           : counter // ignore: cast_nullable_to_non_nullable
               as int,
+      selectedIndex: null == selectedIndex
+          ? _value.selectedIndex
+          : selectedIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      categories: null == categories
+          ? _value.categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>,
     ) as $Val);
   }
 }
@@ -65,7 +79,7 @@ abstract class _$$CleaningDetailStateImplCopyWith<$Res>
       __$$CleaningDetailStateImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({int counter});
+  $Res call({int counter, int selectedIndex, List<dynamic> categories});
 }
 
 /// @nodoc
@@ -80,12 +94,22 @@ class __$$CleaningDetailStateImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? counter = null,
+    Object? selectedIndex = null,
+    Object? categories = null,
   }) {
     return _then(_$CleaningDetailStateImpl(
       counter: null == counter
           ? _value.counter
           : counter // ignore: cast_nullable_to_non_nullable
               as int,
+      selectedIndex: null == selectedIndex
+          ? _value.selectedIndex
+          : selectedIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      categories: null == categories
+          ? _value.categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>,
     ));
   }
 }
@@ -93,15 +117,24 @@ class __$$CleaningDetailStateImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$CleaningDetailStateImpl implements _CleaningDetailState {
-  _$CleaningDetailStateImpl({this.counter = 0});
+  _$CleaningDetailStateImpl(
+      {this.counter = 0,
+      this.selectedIndex = 0,
+      this.categories = const ['About', 'Gallery', 'Review']});
 
   @override
   @JsonKey()
   int counter;
+  @override
+  @JsonKey()
+  int selectedIndex;
+  @override
+  @JsonKey()
+  List<dynamic> categories;
 
   @override
   String toString() {
-    return 'CleaningDetailState(counter: $counter)';
+    return 'CleaningDetailState(counter: $counter, selectedIndex: $selectedIndex, categories: $categories)';
   }
 
   @JsonKey(ignore: true)
@@ -113,11 +146,20 @@ class _$CleaningDetailStateImpl implements _CleaningDetailState {
 }
 
 abstract class _CleaningDetailState implements CleaningDetailState {
-  factory _CleaningDetailState({int counter}) = _$CleaningDetailStateImpl;
+  factory _CleaningDetailState(
+      {int counter,
+      int selectedIndex,
+      List<dynamic> categories}) = _$CleaningDetailStateImpl;
 
   @override
   int get counter;
   set counter(int value);
+  @override
+  int get selectedIndex;
+  set selectedIndex(int value);
+  @override
+  List<dynamic> get categories;
+  set categories(List<dynamic> value);
   @override
   @JsonKey(ignore: true)
   _$$CleaningDetailStateImplCopyWith<_$CleaningDetailStateImpl> get copyWith =>

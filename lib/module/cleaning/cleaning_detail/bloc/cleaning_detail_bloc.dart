@@ -14,6 +14,10 @@ class CleaningDetailBloc extends Bloc<CleaningDetailEvent, CleaningDetailState> 
         emit(state.copyWith());
       
     });
+    on<CleaningDetailUpdateIndexEvent>((event, emit) {
+      state.selectedIndex = event.selectedIndex;
+      emit(state.copyWith());
+    });
   }
 
   @override
