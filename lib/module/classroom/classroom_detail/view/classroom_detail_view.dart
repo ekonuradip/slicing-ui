@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hyper_ui/core.dart';
 import 'package:hyper_ui/module/classroom/classroom_theme/classroom_theme.dart';
 import '../bloc/classroom_detail_bloc.dart';
 import '../event/classroom_detail_event.dart';
@@ -432,7 +433,9 @@ class _ClassroomDetailViewState extends State<ClassroomDetailView> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0)),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(ClassroomDashboardView());
+                },
                 child: Text(
                   "Enroll Now",
                   style: TextStyle(color: Colors.white),

@@ -68,199 +68,20 @@ class _LoginViewState extends State<LoginView> {
           children: [
             Row(
               children: [
-                InkWell(
-                  onTap: () {
-                    Get.to(CofeeintroView());
-                  },
-                  child: Container(
-                    height: 80,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8.0),
-                      ),
-                      border: Border.all(
-                        width: 1.0,
-                        color: Colors.grey[200]!,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Color(0x19000000),
-                          blurRadius: 24,
-                          offset: Offset(0, 11),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.view_comfortable,
-                          size: 32.0,
-                        ),
-                        const SizedBox(
-                          height: 12.0,
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                buttonPortofolio(name: "Coffee", page: CofeeintroView()),
                 const SizedBox(
                   width: 12.0,
                 ),
-                InkWell(
-                  onTap: () {
-                    Get.to(TravelIntroView());
-                  },
-                  child: Container(
-                    height: 80,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8.0),
-                      ),
-                      border: Border.all(
-                        width: 1.0,
-                        color: Colors.grey[200]!,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Color(0x19000000),
-                          blurRadius: 24,
-                          offset: Offset(0, 11),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.view_comfortable,
-                          size: 32.0,
-                        ),
-                        const SizedBox(
-                          height: 12.0,
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                buttonPortofolio(name: "Travel", page: TravelIntroView()),
                 const SizedBox(
                   width: 12.0,
                 ),
-                InkWell(
-                  onTap: () {
-                    Get.to(ClassroomDashboardView());
-                  },
-                  child: Container(
-                    height: 80,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8.0),
-                      ),
-                      border: Border.all(
-                        width: 1.0,
-                        color: Colors.grey[200]!,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Color(0x19000000),
-                          blurRadius: 24,
-                          offset: Offset(0, 11),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.view_comfortable,
-                          size: 32.0,
-                        ),
-                        const SizedBox(
-                          height: 12.0,
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                buttonPortofolio(
+                    name: "Classroom", page: ClassroomDashboardView()),
                 const SizedBox(
                   width: 12.0,
                 ),
-                InkWell(
-                  onTap: () {
-                    Get.to(DoctorDashboardView());
-                  },
-                  child: Container(
-                    height: 80,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8.0),
-                      ),
-                      border: Border.all(
-                        width: 1.0,
-                        color: Colors.grey[200]!,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Color(0x19000000),
-                          blurRadius: 24,
-                          offset: Offset(0, 11),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.view_comfortable,
-                          size: 32.0,
-                        ),
-                        const SizedBox(
-                          height: 12.0,
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                buttonPortofolio(name: "Doctor", page: DoctorDashboardView())
               ],
             ),
             const SizedBox(
@@ -269,60 +90,17 @@ class _LoginViewState extends State<LoginView> {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                InkWell(
-                  onTap: () {
-                    Get.to(VacationDashboardView());
-                  },
-                  child: Container(
-                    height: 80,
-                    width: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(8.0),
-                      ),
-                      border: Border.all(
-                        width: 1.0,
-                        color: Colors.grey[200]!,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Color(0x19000000),
-                          blurRadius: 24,
-                          offset: Offset(0, 11),
-                        ),
-                      ],
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.view_comfortable,
-                          size: 32.0,
-                        ),
-                        const SizedBox(
-                          height: 12.0,
-                        ),
-                        Text(
-                          "text",
-                          style: TextStyle(
-                            fontSize: 16.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
+                buttonPortofolio(
+                    name: "Vacation", page: VacationDashboardView()),
                 const SizedBox(
                   width: 12.0,
                 ),
-                buttonPortofolio(name: "Test", page: TravelDashboardView()), 
+                buttonPortofolio(name: "Test", page: TravelDashboardView()),
                 const SizedBox(
-                width: 12.0,
+                  width: 12.0,
                 ),
-                buttonPortofolio(name: "Cleaning", page: CleaningMainNavigationView())
+                buttonPortofolio(
+                    name: "Cleaning", page: CleaningMainNavigationView())
               ],
             )
           ],
