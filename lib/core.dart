@@ -23,6 +23,10 @@ export 'package:hyper_ui/module/cleaning/cleaning_dashboard/bloc/cleaning_dashbo
 export 'package:hyper_ui/module/cleaning/cleaning_dashboard/event/cleaning_dashboard_event.dart';
 export 'package:hyper_ui/module/cleaning/cleaning_dashboard/state/cleaning_dashboard_state.dart';
 export 'package:hyper_ui/module/cleaning/cleaning_dashboard/view/cleaning_dashboard_view.dart';
+export 'package:hyper_ui/module/cleaning/cleaning_detail/bloc/cleaning_detail_bloc.dart';
+export 'package:hyper_ui/module/cleaning/cleaning_detail/event/cleaning_detail_event.dart';
+export 'package:hyper_ui/module/cleaning/cleaning_detail/state/cleaning_detail_state.dart';
+export 'package:hyper_ui/module/cleaning/cleaning_detail/view/cleaning_detail_view.dart';
 export 'package:hyper_ui/module/cleaning/cleaning_main_navigation/bloc/cleaning_main_navigation_bloc.dart';
 export 'package:hyper_ui/module/cleaning/cleaning_main_navigation/event/cleaning_main_navigation_event.dart';
 export 'package:hyper_ui/module/cleaning/cleaning_main_navigation/state/cleaning_main_navigation_state.dart';

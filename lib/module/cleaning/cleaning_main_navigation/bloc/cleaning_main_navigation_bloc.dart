@@ -2,9 +2,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../event/cleaning_main_navigation_event.dart';
 import '../state/cleaning_main_navigation_state.dart';
 import 'package:hyper_ui/bloc_util.dart';
-import 'package:injectable/injectable.dart';
 
-@singleton
+
+
 class CleaningMainNavigationBloc
     extends Bloc<CleaningMainNavigationEvent, CleaningMainNavigationState>
     implements IBlocBase {

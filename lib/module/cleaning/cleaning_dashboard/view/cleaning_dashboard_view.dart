@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hyper_ui/core.dart';
 import '../bloc/cleaning_dashboard_bloc.dart';
 import '../event/cleaning_dashboard_event.dart';
 import '../state/cleaning_dashboard_state.dart';
@@ -509,74 +510,79 @@ class _CleaningDashboardViewState extends State<CleaningDashboardView> {
                       child: Row(
                         children: [
                           for (var i in [1, 2, 3, 4, 5])
-                            Container(
-                              height: 160.0,
-                              width: MediaQuery.of(context).size.width * 0.65,
-                              margin: const EdgeInsets.only(
-                                right: 12.0,
-                              ),
-                              padding: const EdgeInsets.all(12.0),
-                              decoration: const BoxDecoration(
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                                  ),
-                                  fit: BoxFit.cover,
+                            InkWell(
+                              onTap: () {
+                                Get.to(CleaningDetailView());
+                              },
+                              child: Container(
+                                height: 160.0,
+                                width: MediaQuery.of(context).size.width * 0.65,
+                                margin: const EdgeInsets.only(
+                                  right: 12.0,
                                 ),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(
-                                    8.0,
+                                padding: const EdgeInsets.all(12.0),
+                                decoration: const BoxDecoration(
+                                  image: DecorationImage(
+                                    image: NetworkImage(
+                                      "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                  borderRadius: BorderRadius.all(
+                                    Radius.circular(
+                                      8.0,
+                                    ),
                                   ),
                                 ),
-                              ),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    height: 30,
-                                    padding: const EdgeInsets.all(4.0),
-                                    decoration: const BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(12.0),
+                                child: Row(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.all(4.0),
+                                      decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(12.0),
+                                        ),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          const Icon(
+                                            Icons.star,
+                                            size: 24.0,
+                                            color: Colors.orange,
+                                          ),
+                                          const SizedBox(
+                                            width: 8.0,
+                                          ),
+                                          Text(
+                                            "4.8   ",
+                                            style: TextStyle(
+                                                fontSize: 16.0,
+                                                fontWeight: FontWeight.bold),
+                                          ),
+                                        ],
                                       ),
                                     ),
-                                    child: Row(
-                                      children: [
-                                        const Icon(
-                                          Icons.star,
-                                          size: 24.0,
-                                          color: Colors.orange,
+                                    Spacer(),
+                                    Container(
+                                      height: 30,
+                                      padding: const EdgeInsets.all(4.0),
+                                      decoration: const BoxDecoration(
+                                        color: Colors.white,
+                                        borderRadius: BorderRadius.all(
+                                          Radius.circular(12.0),
                                         ),
-                                        const SizedBox(
-                                          width: 8.0,
-                                        ),
-                                        Text(
-                                          "4.8   ",
-                                          style: TextStyle(
-                                              fontSize: 16.0,
-                                              fontWeight: FontWeight.bold),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                  Spacer(),
-                                  Container(
-                                    height: 30,
-                                    padding: const EdgeInsets.all(4.0),
-                                    decoration: const BoxDecoration(
-                                      color: Colors.white,
-                                      borderRadius: BorderRadius.all(
-                                        Radius.circular(12.0),
+                                      ),
+                                      child: const Icon(
+                                        Icons.bookmark,
+                                        color: Color(0xff4c9782),
+                                        size: 24.0,
                                       ),
                                     ),
-                                    child: const Icon(
-                                      Icons.bookmark,
-                                      color: Color(0xff4c9782),
-                                      size: 24.0,
-                                    ),
-                                  ),
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                         ],
