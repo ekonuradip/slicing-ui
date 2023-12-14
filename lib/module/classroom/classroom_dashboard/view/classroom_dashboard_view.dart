@@ -224,7 +224,7 @@ class _ClassroomDashboardViewState extends State<ClassroomDashboardView> {
                           "See All",
                           style: TextStyle(
                             fontSize: 12.0,
-                            color: Colors.yellow,
+                            color: Colors.yellow[800],
                           ),
                         ),
                       ],
@@ -278,7 +278,7 @@ class _ClassroomDashboardViewState extends State<ClassroomDashboardView> {
                           "See All",
                           style: TextStyle(
                             fontSize: 12.0,
-                            color: Colors.yellow,
+                            color: Colors.yellow[800],
                           ),
                         ),
                       ],
@@ -326,7 +326,7 @@ class _ClassroomDashboardViewState extends State<ClassroomDashboardView> {
                                       decoration: const BoxDecoration(
                                         image: DecorationImage(
                                           image: NetworkImage(
-                                            "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                                            "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmtpbmd8ZW58MHx8MHx8fDA%3D",
                                           ),
                                           fit: BoxFit.cover,
                                         ),
@@ -479,7 +479,7 @@ class _ClassroomDashboardViewState extends State<ClassroomDashboardView> {
                           "See All",
                           style: TextStyle(
                             fontSize: 12.0,
-                            color: Colors.yellow,
+                            color: Colors.yellow[800],
                           ),
                         ),
                       ],

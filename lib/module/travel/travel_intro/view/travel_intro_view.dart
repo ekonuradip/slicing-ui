@@ -57,109 +57,113 @@ class _TravelIntroViewState extends State<TravelIntroView> {
     TravelIntroState state,
   ) {
     return Scaffold(
-      body: Padding(
-        padding: EdgeInsets.all(12.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Container(
-              height: MediaQuery.of(context).size.height * 0.6,
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: NetworkImage(
-                    "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                  ),
-                  fit: BoxFit.cover,
-                ),
-                borderRadius: BorderRadius.all(
-                  Radius.circular(
-                    8.0,
-                  ),
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
-            ),
-            Center(
-              child: Text(
-                "Discover and Find Your \nPerfect Dream House",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
-            ),
-            Center(
-              child: Text(
-                "App to search and discover the most suitable \nplace for you to stay.",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 14.0,
-                  color: Colors.grey,
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
-            ),
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: 40,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(30.0),
-                ),
-              ),
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0)),
-                  backgroundColor: Color(0xff6151fc),
-                ),
-                onPressed: () {
-                  Get.to(TravelDashboardView());
-                },
-                child: const Text(
-                  "Let's Get Started",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ),
-            ),
-            const SizedBox(
-              height: 20.0,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: EdgeInsets.all(12.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Text(
-                  "Already have an account? ",
-                  style: TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.bold,
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.6,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: NetworkImage(
+                        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fHww",
+                      ),
+                      fit: BoxFit.cover,
+                    ),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(
+                        8.0,
+                      ),
+                    ),
                   ),
                 ),
                 const SizedBox(
-                  width: 4.0,
+                  height: 20.0,
                 ),
-                Text(
-                  "Sign In",
-                  style: TextStyle(
-                      fontSize: 16.0,
-                      decoration: TextDecoration.underline,
-                      decorationColor: Color(0xff6151fc),
+                Center(
+                  child: Text(
+                    "Discover and Find Your \nPerfect Dream House",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 24.0,
                       fontWeight: FontWeight.bold,
-                      color: Color(0xff6151fc)),
+                    ),
+                  ),
                 ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Center(
+                  child: Text(
+                    "App to search and discover the most suitable \nplace for you to stay.",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 14.0,
+                      color: Colors.grey,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Container(
+                  width: MediaQuery.of(context).size.width,
+                  height: 40,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(30.0),
+                    ),
+                  ),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30.0)),
+                      backgroundColor: Color(0xff6151fc),
+                    ),
+                    onPressed: () {
+                      Get.to(TravelDashboardView());
+                    },
+                    child: const Text(
+                      "Let's Get Started",
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Already have an account? ",
+                      style: TextStyle(
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(
+                      width: 4.0,
+                    ),
+                    Text(
+                      "Sign In",
+                      style: TextStyle(
+                          fontSize: 16.0,
+                          decoration: TextDecoration.underline,
+                          decorationColor: Color(0xff6151fc),
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xff6151fc)),
+                    ),
+                  ],
+                )
               ],
-            )
-          ],
+            ),
+          ),
         ),
       ),
     );

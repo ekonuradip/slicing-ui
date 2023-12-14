@@ -265,7 +265,7 @@ class _CleaningDashboardViewState extends State<CleaningDashboardView> {
                         children: [
                           for (var i in [1, 2, 3])
                             Container(
-                              height: 175.0,
+                              height: 185.0,
                               width: MediaQuery.of(context).size.width * 0.75,
                               margin: const EdgeInsets.only(
                                 right: 16.0,
@@ -273,7 +273,7 @@ class _CleaningDashboardViewState extends State<CleaningDashboardView> {
                               decoration: const BoxDecoration(
                                 image: DecorationImage(
                                   image: NetworkImage(
-                                    "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                                    "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNsZWFuaW5nJTIwJTI2JTIwcmVwYWlyfGVufDB8fDB8fHww",
                                   ),
                                   fit: BoxFit.cover,
                                 ),
@@ -524,7 +524,7 @@ class _CleaningDashboardViewState extends State<CleaningDashboardView> {
                                 decoration: const BoxDecoration(
                                   image: DecorationImage(
                                     image: NetworkImage(
-                                      "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                                      "https://images.unsplash.com/photo-1502005097973-6a7082348e28?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNsZWFuaW5nJTIwJTI2JTIwcmVwYWlyfGVufDB8fDB8fHww",
                                     ),
                                     fit: BoxFit.cover,
                                   ),

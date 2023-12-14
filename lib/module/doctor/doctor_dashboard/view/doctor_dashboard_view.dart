@@ -473,7 +473,7 @@ class _DoctorDashboardViewState extends State<DoctorDashboardView> {
                                     decoration: BoxDecoration(
                                       image: DecorationImage(
                                         image: NetworkImage(
-                                          "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                                          "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGhvc3BpdGFsfGVufDB8fDB8fHww",
                                         ),
                                         fit: BoxFit.cover,
                                       ),
@@ -540,7 +540,7 @@ class _DoctorDashboardViewState extends State<DoctorDashboardView> {
         ),
       ),
       bottomNavigationBar: Container(
-          height: 80,
+          height: 100,
           padding: const EdgeInsets.all(20.0),
           decoration: const BoxDecoration(
             color: Colors.white,

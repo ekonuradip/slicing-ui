@@ -74,7 +74,7 @@ class _ClassroomDetailViewState extends State<ClassroomDetailView> {
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: NetworkImage(
-                    "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                    "https://images.unsplash.com/photo-1587440871875-191322ee64b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVzaWduJTIwdGhpbmtpbmd8ZW58MHx8MHx8fDA%3D",
                   ),
                   fit: BoxFit.cover,
                 ),
@@ -225,9 +225,6 @@ class _ClassroomDetailViewState extends State<ClassroomDetailView> {
                       return Expanded(
                         child: Container(
                           padding: const EdgeInsets.only(right: 12.0),
-                          margin: const EdgeInsets.only(
-                            right: 10.0,
-                          ),
                           decoration: const BoxDecoration(
                             color: Colors.white,
                           ),
@@ -395,7 +392,7 @@ class _ClassroomDetailViewState extends State<ClassroomDetailView> {
       ),
       bottomNavigationBar: Container(
         padding: const EdgeInsets.all(20.0),
-        height: 80,
+        height: 100,
         decoration: BoxDecoration(
           color: Colors.white,
         ),

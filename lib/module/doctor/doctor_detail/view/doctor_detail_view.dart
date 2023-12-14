@@ -330,7 +330,12 @@ class _DoctorDetailViewState extends State<DoctorDetailView> {
             onPressed: () {
               Get.to(LoginView());
             },
-            child: const Text("Book Appointment"),
+            child: const Text(
+              "Book Appointment",
+              style: TextStyle(
+                color: Colors.white,
+              ),
+            ),
           ),
         ),
       ),

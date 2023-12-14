@@ -288,7 +288,7 @@ class _TravelDashboardViewState extends State<TravelDashboardView> {
                                   decoration: const BoxDecoration(
                                     image: DecorationImage(
                                       image: NetworkImage(
-                                        "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                                        "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fHww",
                                       ),
                                       fit: BoxFit.cover,
                                     ),
@@ -469,7 +469,7 @@ class _TravelDashboardViewState extends State<TravelDashboardView> {
                         decoration: const BoxDecoration(
                           image: DecorationImage(
                             image: NetworkImage(
-                              "https://images.unsplash.com/photo-1533050487297-09b450131914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                              "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dHJhdmVsfGVufDB8fDB8fHww",
                             ),
                             fit: BoxFit.cover,
                           ),
