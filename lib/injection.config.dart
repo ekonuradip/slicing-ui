@@ -11,7 +11,7 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
-import 'module/cleaning/cleaning_detail/bloc/cleaning_detail_bloc.dart' as _i3;
+import 'module/api/api_test/bloc/api_test_bloc.dart' as _i3;
 
 extension GetItInjectableX on _i1.GetIt {
 // initializes the registration of main-scope dependencies inside of GetIt
@@ -24,7 +24,7 @@ extension GetItInjectableX on _i1.GetIt {
       environment,
       environmentFilter,
     );
-    gh.singleton<_i3.CleaningDetailBloc>(_i3.CleaningDetailBloc());
+    gh.singleton<_i3.ApiTestBloc>(_i3.ApiTestBloc());
     return this;
   }
 }

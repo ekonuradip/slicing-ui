@@ -101,7 +101,11 @@ class _LoginViewState extends State<LoginView> {
                   width: 12.0,
                 ),
                 buttonPortofolio(
-                    name: "Cleaning", page: CleaningMainNavigationView())
+                    name: "Cleaning", page: CleaningMainNavigationView()),
+                const SizedBox(
+                  width: 12.0,
+                ),
+                buttonPortofolio(name: "API test", page: ApiTestView())
               ],
             )
           ],

@@ -21,7 +21,7 @@ class _buttonPortofolioState extends State<buttonPortofolio> {
         Get.to(widget.page);
       },
       child: Container(
-        height: 80,
+        height: 92,
         width: 80,
         decoration: BoxDecoration(
           color: Colors.white,

@@ -17,7 +17,8 @@
         "vacation/vacation_intro",
         "cleaning/cleaning_dashboard",
         "cleaning/cleaning_main_navigation",
-        "cleaning/cleaning_detail"
+        "cleaning/cleaning_detail",
+        "api/api_test"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
